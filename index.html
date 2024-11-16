@@ -353,6 +353,7 @@
             if(inputEl.value.length>0){                             //created result function for searching the input using url
             window.open(url,'_self')
             inputEl.value=""
+            crossmarkEl.classList.add("crossmark")
         }
         }
         searchbuttonEl.addEventListener('click',search)    // call the result function on clicking the search button
