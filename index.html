@@ -326,7 +326,14 @@
         let inputEl=document.getElementById("input")
         let searchbuttonEl=document.getElementById("searchbutton") //calling the requried clsss from html
         let crossmarkEl=document.querySelector('.crossmark')
+        let luckybuttonEl=document.getElementById("luckybutton")
+        
+        luckybuttonEl.addEventListener('click',function(){ 
+            let luckyurl='https://doodles.google/';
+            window.open(luckyurl,'_self')
 
+        })
+        
         inputEl.addEventListener('input',()=>{  //calling x mark if the input text is exit and remiving if no text
             if (inputEl.value.length>0){
                crossmarkEl.classList.remove("crossmark")
