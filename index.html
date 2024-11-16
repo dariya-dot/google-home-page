@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Font+Name:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+          
+        /*header ---header----header ---header-----header ---header--------header ---header */
+        .header{
+            justify-content: space-between;
+            padding-top: 15px;
+            font-size: large;
+            padding-left: 25px;
+            padding-right: 25px;
+
+            
+        }
+        .header-left ,.header-right{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        
+        .header-right a, .header-left a{
+            padding-left: 15px;
+            padding-right: 0;
+            text-decoration: none;
+            color: black;
+        }
+        .header-right a:hover, .header-left a:hover{
+            
+            text-decoration: underline;
+            
+        }
+       /*body ----------body------------ body*/
+       
+        .container-body{
+            display: flex;
+            flex-direction: column;
+            padding-left: auto;
+            padding-right: auto;
+            flex: 1;
+            align-items: center;
+        }
+        /*google image-----google image------google image-------google image-------google image*/
+        .google-image img{
+            width: 250px;
+            
+        }
+        .google-image{
+            padding-top: 20px;
+            display: grid;
+            place-items: center
+        }
+        /* <!--serch-box--serch-box--serch-box---serch-box-------serch-box-->*/
+        .search-box{
+            width: 600px;
+            border: solid 2px;
+            margin-top: 15px;
+            border-radius: 25px;
+            height: 50px;
+            align-items: center;
+            border-color: rgb(240, 233, 233);
+            justify-content: center;
+           
+        }
+        .search-box:hover{
+            border-color: #393831;
+        }
+        .search-box img{
+            margin-right: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .search-box input{
+           border: none;
+           outline: none;
+            flex: 1;
+            
+        }
+        .crossmark{
+            display: none;
+        }
+        /*buttons---buttons------buttons----------buttons---------buttons-----buttons*/
+        .buttons{
+            padding-top: 25px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .buttons button{
+            margin-left:10px ;
+            margin-right: 10px;
+            width: 150px;
+        }
+
+        /* google-Languages----google-Languages-----google-Languages-----google-Languages*/
+        .contaner-languages{
+            padding-top: 35px;
+            display: flex;
+            flex-direction: row;
+        }
+        .contaner-languages p{
+            margin-right: 6px;
+        }
+        .contaner-languages a{
+            padding-right: 8px;
+            text-decoration: none;
+        }
+        .contaner-languages a:hover{
+            
+            text-decoration: underline;
+        }
+
+        /*footer ---footer---footer-----footer---------footer----footer*/
+        footer {
+            
+            background-color: rgb(249, 247, 247);
+            display: flex;
+            flex-direction: column;
+
+        }
+        footer p{
+            padding-left: 10px;
+            
+        }
+        .secontfooter{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            
+        }
+        .secontfooter .left a,.secontfooter .right a{
+            padding: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        .secontfooter .left a:hover,.secontfooter .right a:hover {
+            
+            text-decoration: underline;
+        }
+        .firstfooter{
+            display: flex;
+            justify-content: center;
+            height: 15px;
+        }
+
+
+
+
+
+        /*media wuary */
+
+        @media (max-width: 670px) { 
+            .header-left{
+                display: none;
+            }
+            .header-right {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;  
+            }
+            .search-box{
+                width: 80%;
+                height: 40px;
+            }
+            .search-box a{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .search-box input{
+                min-width: 0;
+            }
+            .google-image img{
+                width: 200px; 
+            }
+            .buttons button{
+                margin-left:7px ;
+                margin-right: 7px;
+               font-size: 13px;
+                width: 150px;
+                font-weight: 400;
+            }
+            .contaner-languages{
+                padding-top: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .contaner-languages a{
+                margin-right: 12px;
+            }
+            footer{
+                font-size: 15px;
+                height: fit-content;
+            }
+            .secontfooter .left a, .secontfooter .right a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0%;
+            }
+            .secontfooter {
+                display: flex;
+                justify-content: space-around;   
+            }
+            
+
+        }   
+
+
+
+    </style>
+</head>
+
+<body>
+    <!--header-----Header------Header-------Header------Header----------Header-->
+    <header>
+        <div class="header d-flex">
+            <div class="header-left ">
+                <a href="https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header">About</a>
+                 <a href="https://store.google.com/in/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB&pli=1">Store</a>
+            </div>
+            <div class="header-right">
+                <a href="https://workspace.google.com/intl/en-US/gmail/">Gmail</a>
+                <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+                <a href="https://about.google/products/"><img src="./apps.png"  width="16" height="16"  alt=""></a>
+                <a href="https://nlink.at/oHJ8"><button class="btn btn-primary">Signin</button></a>  
+            </div>
+        </div>
+    </header>
+
+
+    <!--body   -----body------body------body-------body----body---body----body-->
+    <div class="container-body"> 
+
+
+        <!--google image-----google image------google image-------google image-  (part of container-body)*/-->
+        <div class="google-image">
+           <img src="./google.png" alt="">
+        </div>
+
+
+        <!--serch-box--serch-box--serch-box---serch-box-------serch-box(part of container-body)-->
+        <div class="search-box d-flex ">
+            <img src="./serch.png" width="16" height="16" alt="">
+            <input type="text" id="input">
+            <img class="crossmark" src="./cross.png" width="16" height="16"  alt=""></a>
+            <img src="./voice.png"  width="16" height="16"alt="">
+            <img src="./Google_Lens_Icon.svg.png" width="16" height="16" alt="">
+        </div>
+
+        <!--google-buttons ----google-buttons------google-buttons-----(part of container-body)-->
+        <div class="buttons">
+            <button  class="btn btn-light " id="searchbutton">google search</button>
+            <button class="btn btn-light " id="luckybutton">I'm Feeling Lucky</button>
+
+        </div>
+        
+        <!--lanaguages----lanaguages------lanaguages--------lanaguages(part of container-body)-->
+        <div class="contaner-languages d-flex">
+            <p>Google offered in:</p>
+                <div>
+                    <a href="">हिन्दी </a>
+                    <a href="">తెలుగు</a>
+                    <a href=""> বাংলা</a>
+                </div>
+                <div>
+                    <a href="">मराठी</a>
+                    <a href="">தமிழ்</a>
+                    <a href="">ગુજરાતી</a>
+                </div>
+                <div>
+                    <a href="">ಕನ್ನಡ</a>
+                    <a href="">മലയാളം</a>
+                    <a href="">ਪੰਜਾਬੀ</a>     
+                </div>
+                 
+        </div>
+
+
+        
+    </div>
+    <!--footer ---footer---footer-----footer---------footer----footer-->
+    <footer>
+        <div class="firstfooter">
+            <p>India</p>
+        </div>
+         <hr>
+        <div class="secontfooter">
+            <div class="left">
+                <a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-
+                g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a href="https://www.google.com/intl/en_in/business/">Business</a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </div>
+            <div class="right">
+                <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+                <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+                <a href="https://www.google.com/preferences?hl=en-IN&fg=1">Settings</a>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!--java script-->
+    <script>
+        //calling the requried clsss from html
+        let inputEl=document.getElementById("input")
+        let searchbuttonEl=document.getElementById("searchbutton") //calling the requried clsss from html
+        let crossmarkEl=document.querySelector('.crossmark')
+
+        inputEl.addEventListener('input',()=>{  //calling x mark if the input text is exit and remiving if no text
+            if (inputEl.value.length>0){
+               crossmarkEl.classList.remove("crossmark")
+            } else{
+                crossmarkEl.classList.add("crossmark")
+            }
+        })
+       
+        crossmarkEl.addEventListener('click',function(){ //clearing the text using x mark 
+            inputEl.value="";
+            crossmarkEl.classList.add("crossmark")
+
+        })
+
+        let search =function(){
+            let url='https://www.google.com/search?q='+inputEl.value;
+            if(inputEl.value.length>0){                             //created result function for searching the input using url
+            window.open(url,'_self')
+            inputEl.value=""
+        }
+        }
+        searchbuttonEl.addEventListener('click',search)    // call the result function on clicking the search button
+        inputEl.addEventListener('keydown',function(event){
+            if(event.key==='Enter'){                        // calling the result function on clicking the enter buttun
+                search()
+            }
+        })
+        
+    </script>
+</body>
+</html>
